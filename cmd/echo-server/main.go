@@ -117,7 +117,7 @@ func serveWebSocket(wr http.ResponseWriter, req *http.Request, sendServerHostnam
 		//host, err := os.Hostname()
 		if err == nil {
 			//message = []byte(fmt.Sprintf("Request served by %s", host))
-			message = []byte(fmt.Sprintf("echo.websocket.events sponsored by Lob.com"))
+			message = []byte(fmt.Sprintf("echo.websocket.events"))
 		} else {
 			message = []byte(fmt.Sprintf("Server hostname unknown: %s", err.Error()))
 		}
