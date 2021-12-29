@@ -54,3 +54,26 @@ The docker container can be built locally with:
 ```
 make docker
 ```
+
+### Running in Heroku
+Login to Heroku
+
+`heroku login`
+
+You’ll be prompted to hit any key and a browser will open so you can login to Heroku.
+
+Create a Heroku app with the command
+
+`heroku create`
+
+Now deploy the echo-server 
+
+`git push heroku main`
+
+Once the deployment is done - open the app with
+
+`heroku open`
+
+Modify the URL in the address bar of your browser by adding /.ws at the end of your URL.
+
+Alternately, in Postman you can use its websocket connection with the Heroku server you just spun up (do NOT specify the `http://` from within Postman because it's a direct websocket connection)
